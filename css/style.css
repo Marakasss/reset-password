@@ -294,12 +294,12 @@ button:hover {
   background: #1e4fd8;
 }
 .error {
-  color: red;
+  color: rgb(243, 207, 207);
   font-size: 13px;
   margin-bottom: 10px;
 }
 .success {
-  color: green;
+  color: rgb(172, 249, 172);
   text-align: center;
   font-weight: bold;
   margin-top: 10px;

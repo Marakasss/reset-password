@@ -19,11 +19,14 @@ form.addEventListener("submit", async (e) => {
   }
 
   try {
-    const res = await fetch("http://localhost:3000/auth/reset-pwd", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ token, password }),
-    });
+    const res = await fetch(
+      "https://nodejs-hw-mongodb-h3aa.onrender.com/auth/reset-pwd",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ token, password }),
+      }
+    );
 
     const data = await res.json();
 
